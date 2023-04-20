@@ -121,9 +121,9 @@ if (N > 9)
    {
       N = N / 10;
    }
-   Console.WriteLine(N % 10);
+   Console.Write(N % 10);
 }
 else
 {
-   Console.WriteLine("нет");
+   Console.Write("нет");
 }
