@@ -87,12 +87,43 @@
 // 5 -> 2, 4
 // 8 -> 2, 4, 6, 8
 
-Console.WriteLine("Введите число");
-int N = Convert.ToInt32(Console.ReadLine());
-int count = 2;
+// Console.WriteLine("Введите число");
+// int N = Convert.ToInt32(Console.ReadLine());
+// int count = 2;
 
-while (count <= N)
+// while (count <= N)
+// {
+//    Console.Write(" " + count);
+//    count = count + 2;
+// }
+
+///////////////////////////////////////////////////////////////////////////////
+
+// Задача 7 HARD по желанию - идет за 2 необязательных Напишите программу, 
+// которая принимает на вход целое число любой разрядности и на выходе показывает 
+// вторую цифру слева этого числа или говорит, что такой цифры нет. Через строку решать нельзя.
+// 456111 -> 5
+// 78 -> 8
+// 9146548 -> 1
+// 3 -> нет
+
+// Console.WriteLine("Введите число");
+// int N = Convert.ToInt32(Console.ReadLine());
+
+// N = N / 10;
+// Console.WriteLine(N);
+
+Console.WriteLine("Введите число: ");
+int N = Convert.ToInt32(Console.ReadLine());
+if (N > 9)
 {
-   Console.Write(" " + count);
-   count = count + 2;
+   while (N > 99)
+   {
+      N = N / 10;
+   }
+   Console.WriteLine(N % 10);
+}
+else
+{
+   Console.WriteLine("нет");
 }
